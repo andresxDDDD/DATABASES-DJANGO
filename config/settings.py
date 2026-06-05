@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-^h@!mm7ry6_1_tb!yxg)(wxw4z%x@j4q165*&2e4t1#dg(!67i"
+SECRET_KEY = "django-insecure-d+gru*es6)e#j(m(+t15m8w)(1@ro2buy!^ti%^o$=s69_r77v"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "libros",
+    "libreria", 
 ]
 
 MIDDLEWARE = [
@@ -76,11 +76,11 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "django_db",
-        "USER": "django_user",
-        "PASSWORD": "django_password",
-        "HOST": "localhost",  # O la IP de tu servidor/contenedor Docker si no es local
-        "PORT": "5432",       # Puerto por defecto de PostgreSQL
+        "NAME": "libreria",
+        "USER": "usuario",
+        "PASSWORD": "1234",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
